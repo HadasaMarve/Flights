@@ -1,0 +1,62 @@
+
+
+<!-- <div class="toolbar">
+    <button (click)="loadData('week')" [class.active]="selectedRange === 'week'">שבוע</button>
+    <button (click)="loadData('month')" [class.active]="selectedRange === 'month'">חודש</button>
+    <button (click)="loadData('halfYear')" [class.active]="selectedRange === 'halfYear'">חצי שנה</button>
+    <button (click)="loadData('year')" [class.active]="selectedRange === 'year'">שנה</button>
+  </div> -->
+  
+  <!-- <ngx-charts-bar-vertical-2d
+  [scheme]="colorScheme"
+  [results]="data"
+  [gradient]="false"
+  [xAxis]="true"
+  [yAxis]="true"
+  [legend]="true"
+  [showXAxisLabel]="true"
+  [showYAxisLabel]="true"
+  [xAxisLabel]="'Country'"
+  [yAxisLabel]="'GDP Per Capita'"
+  [animations]="true"
+  [roundEdges]="true"
+  [barPadding]="10"
+  [groupPadding]="15"
+  [view]="[800, 400]"
+  class="custom-chart"
+>
+</ngx-charts-bar-vertical-2d> -->
+
+
+<!-- <h2 style="margin-bottom: 20px;">flights-chart works!</h2> -->
+
+<div class="buttons-container">
+  <button [class.selected]="selectedRange === 'week'" (click)="loadData('week')">שבוע</button>
+  <button [class.selected]="selectedRange === 'month'" (click)="loadData('month')">חודש</button>
+  <button [class.selected]="selectedRange === 'halfYear'" (click)="loadData('halfYear')">חצי שנה</button>
+  <button [class.selected]="selectedRange === 'year'" (click)="loadData('year')">שנה</button>
+</div>
+
+<ng-container *ngIf="chartType === 'bar'">
+  <ngx-charts-bar-vertical-2d
+    [view]="view"
+    [scheme]="colorScheme"
+    [results]="data"
+    [gradient]="false"
+    [xAxis]="true"
+    [yAxis]="true"
+    [legend]="true"
+    [showXAxisLabel]="true"
+    [showYAxisLabel]="true"
+    [xAxisLabel]="'תאריך'"
+    [yAxisLabel]="'מספר טיסות'"
+    [animations]="true"
+    [roundEdges]="true"
+    [barPadding]="12"
+    [groupPadding]="16">
+  </ngx-charts-bar-vertical-2d>
+</ng-container>
+
+<ng-container *ngIf="chartType === 'line'">
+  <app-flights-line-chart [data]="data"></app-flights-line-chart>
+</ng-container>
