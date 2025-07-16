@@ -88,5 +88,59 @@ namespace backend.Controllers
             var stats = await _flightApiService.GetFlightsCountByCompanyAsync();
             return Ok(stats);
         }
+
+        //returns sum of flights for each country by a company
+        //GET /api/flights/count-by-operator/EL%20AL%20ISRAEL%20AIRLINES'
+        //  {
+        //  "country": "UNITED STATES",
+        //  "count": 72
+        //},
+        [HttpGet("count-by-operator/{operatorName}")]
+        public async Task<IActionResult> GetFlightCountsByOperator(string operatorName)
+        {
+            var result = await _flightApiService.GetFlightsCountPerCountryByCompanyAsync(operatorName);
+            return Ok(result);
+        }
+
+        //returns sum of flights for each company by a country
+        //GET /api/flights/count-by-country/GREECE'
+        //{
+        //    "company": "BLUE BIRD AIRWAYS",
+        //    "count": 78
+        // },
+        [HttpGet("count-by-country/{country}")]
+        public async Task<IActionResult> GetFlightCountsByCountry(string country)
+        {
+            var result = await _flightApiService.GetFlightsCountPerCompanyByCountryAsync(country);
+            return Ok(result);
+        }
+
+
+        //returns arrivals and departures count per hour in the given hours range
+        //GET /api/flights/stats-per-hour?from=2025-07-13T12%3A00%3A00&to=2025-07-13T16%3A50%3A00
+        //  {
+        //  "hour": "2025-07-13T12:00:00",
+        //  "departuresCount": 9,
+        //  "arrivalsCount": 12
+        //},
+        [HttpGet("stats-per-hour")]
+        public async Task<IActionResult> GetStatsPerHour( [FromQuery] DateTime from, [FromQuery] DateTime to)
+        {
+            if (from > to)
+                return BadRequest("from date must be before to date");
+
+            var stats = await _flightApiService.GetFlightsStatsPerHourAsync(from, to);
+            return Ok(stats);
+        }
+
+        //returns all countries
+        //GET /api/countries
+        [HttpGet("countries")]
+        public async Task<IActionResult> GetAllCountries()
+        {
+            var stats = await _flightApiService.GetAllCountriesAsync();
+            return Ok(stats);
+        }
+
     }
 }

@@ -1,0 +1,32 @@
+<!-- Dropdown לבחירת מדינה -->
+<!-- <div class="dropdown-container">
+  <label for="countrySelect"> select country:</label>
+  <select id="countrySelect" [(ngModel)]="selectedCountry" (change)="loadData(selectedRange)">
+    <option *ngFor="let country of countries" [value]="country">{{ country }}</option>
+  </select>
+</div> -->
+
+<button [class.selected]="selectedRange === '1h'" (click)="loadData('1h')">Last Hour</button>
+<button [class.selected]="selectedRange === '12h'" (click)="loadData('12h')">Last 12 Hours</button>
+<button [class.selected]="selectedRange === '24h'" (click)="loadData('24h')">Last 24 Hours</button>
+
+
+<ng-container *ngIf="chartType === 'bar'">
+  <ngx-charts-bar-vertical-2d
+    [view]="view"
+    [scheme]="colorScheme"
+    [results]="data"
+    [gradient]="false"
+    [xAxis]="true"
+    [yAxis]="true"
+    [legend]="true"
+    [showXAxisLabel]="true"
+    [showYAxisLabel]="true"
+    [xAxisLabel]="'Hour'"
+    [yAxisLabel]="'Number of Flights'"
+    [animations]="true"
+    [roundEdges]="true"
+    [barPadding]="12"
+    [groupPadding]="16">
+  </ngx-charts-bar-vertical-2d>
+</ng-container>

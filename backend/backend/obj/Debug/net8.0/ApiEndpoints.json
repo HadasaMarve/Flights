@@ -72,8 +72,71 @@
   },
   {
     "ContainingType": "backend.Controllers.FlightsController",
+    "Method": "GetFlightCountsByCountry",
+    "RelativePath": "api/Flights/count-by-country/{country}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "country",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "backend.Controllers.FlightsController",
+    "Method": "GetFlightCountsByOperator",
+    "RelativePath": "api/Flights/count-by-operator/{operatorName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "operatorName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "backend.Controllers.FlightsController",
+    "Method": "GetAllCountries",
+    "RelativePath": "api/Flights/countries",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "backend.Controllers.FlightsController",
     "Method": "GetStatsPerDay",
     "RelativePath": "api/Flights/stats-per-day",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "from",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "to",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "backend.Controllers.FlightsController",
+    "Method": "GetStatsPerHour",
+    "RelativePath": "api/Flights/stats-per-hour",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

@@ -487,11 +487,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\דסי\\הנדסאים\\שנה ב\\angular\\project\\backend\\backend\\backend.csproj",
+      "projectUniqueName": "C:\\Users\\user\\דסי\\הנדסאים\\שנה ב\\angular\\project\\Flights\\backend\\backend\\backend.csproj",
       "projectName": "backend",
-      "projectPath": "C:\\Users\\user\\דסי\\הנדסאים\\שנה ב\\angular\\project\\backend\\backend\\backend.csproj",
+      "projectPath": "C:\\Users\\user\\דסי\\הנדסאים\\שנה ב\\angular\\project\\Flights\\backend\\backend\\backend.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\דסי\\הנדסאים\\שנה ב\\angular\\project\\backend\\backend\\obj\\",
+      "outputPath": "C:\\Users\\user\\דסי\\הנדסאים\\שנה ב\\angular\\project\\Flights\\backend\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
