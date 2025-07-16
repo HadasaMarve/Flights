@@ -1,14 +1,21 @@
-import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
-import { provideRouter } from '@angular/router';
-import { FormsModule } from '@angular/forms'; // ייבוא של FormsModule
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { AppComponent } from './app.component'; // ייבוא הקומפוננטה הסטנדאלונית
+import { appRoutes } from './app.routes';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { routes } from './app.routes';
+@NgModule({
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule, 
+    HttpClientModule,
+    RouterModule.forRoot(appRoutes)
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
 
-export const appConfig: ApplicationConfig = {
-  providers: [
-    provideZoneChangeDetection({ eventCoalescing: true }), 
-    provideRouter(routes),
-    FormsModule // הוספת FormsModule כאן
-  ]
-};
+
 

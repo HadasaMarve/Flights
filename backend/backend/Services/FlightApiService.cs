@@ -173,5 +173,101 @@ namespace backend.Services
 
             return result;
         }
+
+
+        //returns sum of flights for each country by a company
+        public async Task<List<FlightCountByCountryDto>> GetFlightsCountPerCountryByCompanyAsync(string operatorName)
+        {
+            var flights = await FetchAllFlightsAsync();
+
+            var result = flights
+                .Where(f => f.OperatorName.Equals(operatorName, StringComparison.OrdinalIgnoreCase))
+                .GroupBy(f => f.CountryEn)
+                .Select(g => new FlightCountByCountryDto
+                {
+                    Country = g.Key,
+                    Count = g.Count()
+                })
+                .OrderByDescending(x => x.Count)
+                .ToList();
+
+            return result;
+        }
+
+
+        //returns sum of flights for each company by a country
+        public async Task<List<FlightCountByCompanyDto>> GetFlightsCountPerCompanyByCountryAsync(string country)
+        {
+            var flights = await FetchAllFlightsAsync();
+
+            var result = flights
+                .Where(f => f.CountryEn.Equals(country, StringComparison.OrdinalIgnoreCase))
+                .GroupBy(f => f.OperatorName)
+                .Select(g => new FlightCountByCompanyDto
+                {
+                    Company = g.Key,
+                    Count = g.Count()
+                })
+                .OrderByDescending(x => x.Count)
+                .ToList();
+
+            return result;
+        }
+
+        //returns arrivals and departures count per hour in the given hours range
+        public async Task<List<FlightHourStatsDto>> GetFlightsStatsPerHourAsync(DateTime from, DateTime to)
+        {
+            // קבלת התאריך הנוכחי
+            var now = DateTime.UtcNow;
+
+            // הגדרת טווח הזמן ל-24 שעות האחרונות
+            var startOfDay = now.AddDays(-1);
+
+            // קבלת כל הטיסות ביממה האחרונה
+            var flights = await FetchAllFlightsAsync();
+            var filteredFlights = flights.Where(f =>
+                f.ScheduledTakeoff.HasValue &&
+                f.ScheduledTakeoff.Value >= startOfDay &&
+                f.ScheduledTakeoff.Value <= now).ToList();
+
+            // נבנה רשימה של שעות בטווח
+            var hours = Enumerable.Range(0, (int)(to - from).TotalHours + 1)
+                .Select(offset => from.AddHours(offset))
+                .ToList();
+
+            var result = new List<FlightHourStatsDto>();
+
+            foreach (var hour in hours)
+            {
+                var departures = filteredFlights.Count(f =>
+                    f.ScheduledTakeoff.Value >= hour &&
+                    f.ScheduledTakeoff.Value < hour.AddHours(1) &&
+                    f.ArrivalOrDeparture == "D");
+
+                var arrivals = filteredFlights.Count(f =>
+                    f.ScheduledTakeoff.Value >= hour &&
+                    f.ScheduledTakeoff.Value < hour.AddHours(1) &&
+                    f.ArrivalOrDeparture == "A");
+
+                result.Add(new FlightHourStatsDto
+                {
+                    Hour = hour,
+                    DeparturesCount = departures,
+                    ArrivalsCount = arrivals
+                });
+            }
+
+            return result;
+        }
+
+
+
+        // returns list of all countries
+        public async Task<List<string>> GetAllCountriesAsync()
+        {
+            var allFlights = await FetchAllFlightsAsync();
+            return allFlights.Select(f=>f.CountryEn).Distinct().ToList();
+        }
+
     }
 }

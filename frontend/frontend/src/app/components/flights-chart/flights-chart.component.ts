@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { NgxChartsModule, ScaleType } from '@swimlane/ngx-charts';
 import { DataService, FlightStatsPerDay } from '../../services/data.service';
 import type { Color } from '@swimlane/ngx-charts';
-import { FlightsLineChartComponent } from '../flights-line-chart/flights-line-chart.component';
 
 @Component({
   selector: 'app-flights-chart',
   standalone: true,
-  imports: [CommonModule, NgxChartsModule,FlightsLineChartComponent],
+  imports: [CommonModule, NgxChartsModule,FormsModule],
   templateUrl: './flights-chart.component.html',
   styleUrls: ['./flights-chart.component.css']
 })
@@ -17,14 +17,18 @@ export class FlightsChartComponent implements OnInit {
   view: [number, number] = [800, 400];
   chartType: 'bar' | 'line' = 'bar';
 
+  // מדינות
+  countries: string[] = [];
+  selectedCountry: string = '';
+
   // אפשרויות תצוגה
   showXAxis = true;
   showYAxis = true;
   showLegend = true;
   showXAxisLabel = true;
-  xAxisLabel = 'תאריך';
+  xAxisLabel = 'Hour';
   showYAxisLabel = true;
-  yAxisLabel = 'מספר טיסות';
+  yAxisLabel = 'Number of Flights';
 
   colorScheme: Color = {
     name: 'customScheme',
@@ -32,48 +36,56 @@ export class FlightsChartComponent implements OnInit {
     group: ScaleType.Ordinal,
     domain: ['#4afffe', '#33c0fc']   };
 
-  selectedRange = 'week';
+  selectedRange = '1h';
 
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
+    // this.loadCountries();     
     this.loadData(this.selectedRange);
   }
+
+  // loadCountries() {
+  //   this.dataService.getCountries().subscribe(countries => {
+  //     this.countries = countries;
+  //     console.log(countries)
+  //     this.selectedCountry = countries[0]; 
+  //     this.loadData(this.selectedRange);
+  //   });
+  // }
 
   loadData(range: string) {
     this.selectedRange = range;
     const now = new Date();
     let from = new Date();
 
-    if (range === 'week') {
-         from.setDate(now.getDate() - 7);
-         this.chartType = 'bar';
-    }
- 
-    else if (range === 'month') from.setMonth(now.getMonth() - 1);
-    else if (range === 'halfYear') from.setMonth(now.getMonth() - 6);
-    else if (range === 'year') {
-      from.setFullYear(now.getFullYear() - 1);
-      this.chartType = 'line'; 
-    } else {
-      this.chartType = 'bar';
-    }
-    const fromStr = from.toISOString().split('T')[0];
-    const toStr = now.toISOString().split('T')[0];
+    if (range === '1h') from.setHours(now.getHours() - 1);
+    else if (range === '12h') from.setHours(now.getHours() - 12);
+    else if (range === '24h') from.setHours(now.getHours() - 24);
 
+
+    const fromStr = from.toISOString();
+    const toStr = now.toISOString();
+
+    console.log(fromStr,toStr)
 
     this.dataService.getFlightsStats(fromStr, toStr).subscribe(apiData => {
+      console.log(this.data)
       this.data = this.mapToGroupedData(apiData);
     });
   }
 
-  mapToGroupedData(apiData: FlightStatsPerDay[]): any[] {
-    return apiData.map((day: FlightStatsPerDay) => ({
-      name: new Date(day.date).toLocaleDateString('he-IL', { weekday: 'short', month: 'short', day: 'numeric' }),
+  mapToGroupedData(apiData: any[]): any[] {
+    return apiData.map((entry: any) => ({
+      name: new Date(entry.hour).toLocaleTimeString('en-GB', {
+        hour: '2-digit',
+        minute: '2-digit'
+      }),
       series: [
-        { name: 'המראות', value: day.departuresCount },
-        { name: 'נחיתות', value: day.arrivalsCount }
+        { name: 'Departures', value: Number(entry.departuresCount) || 0 },
+        { name: 'Arrivals', value: Number(entry.arrivalsCount) || 0 }
       ]
     }));
   }
+  
 }

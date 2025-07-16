@@ -1,19 +1,15 @@
 import { Component } from '@angular/core';
-import { FlightsChartComponent } from './components/flights-chart/flights-chart.component';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
-
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [FlightsChartComponent, NgxChartsModule],
+  standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  standalone: true
+  imports: [RouterModule], 
 })
 export class AppComponent {
   title = 'flightsProject';
-
-  
 }
 
 

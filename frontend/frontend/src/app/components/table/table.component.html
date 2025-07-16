@@ -1,0 +1,47 @@
+<div class="table-wrapper">
+    <h2>טיסות אחרונות</h2>
+  
+    <div *ngIf="loading" class="loading-msg">טוען נתונים...</div>
+  
+    <div *ngIf="!loading && flights.length === 0" class="loading-msg">אין טיסות להצגה.</div>
+  
+    <div *ngIf="!loading && flights.length > 0" class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>מספר טיסה</th>
+            <th>חברה</th>
+            <th>מדינה</th>
+            <th>עיר</th>
+            <th>טרמינל</th>
+            <th>המראה מתוכננת</th>
+            <th>המראה בפועל</th>
+            <th>כיוון</th>
+            <th>סטטוס</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let flight of flights">
+            <td>{{ flight.operatorCode }}{{ flight.flightNumber }}</td>
+            <td>{{ flight.operatorName }}</td>
+            <td>{{ flight.countryHe }}</td>
+            <td>{{ flight.airportNameHe }}</td>
+            <td class="center">{{ flight.terminal }}</td>
+            <td>{{ flight.scheduledTakeoff | date: 'shortTime' }}</td>
+            <td>{{ flight.actualTakeoff | date: 'shortTime' }}</td>
+            <td>
+              <span class="direction">
+                {{ flight.arrivalOrDeparture === 'A' ? 'נחיתה' : 'המראה' }}
+              </span>
+            </td>
+            <td>
+              <span [ngClass]="getStatusClass(flight.statusEn)">
+                {{ flight.statusHe }}
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

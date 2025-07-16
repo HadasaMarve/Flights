@@ -1,18 +1,9 @@
-import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
-import { provideHttpClient } from '@angular/common/http';
+import { enableProdMode } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app/app.config';
 import { provideAnimations } from '@angular/platform-browser/animations';
 
-
-// הוספת provideAnimations לפה:
-bootstrapApplication(AppComponent, {
-  providers: [
-    provideHttpClient(),
-    provideAnimations() // ⬅️ זו השורה החשובה
-  ]
-});
-
-// bootstrapApplication(AppComponent, {
-//   providers: [provideHttpClient()]
-// });
+platformBrowserDynamic([
+  provideAnimations()
+]).bootstrapModule(AppModule)
+  .catch(err => console.error(err));

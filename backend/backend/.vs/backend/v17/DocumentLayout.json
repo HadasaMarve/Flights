@@ -1,26 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\user1\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D0\u05E0\u05D2\u05D5\u05DC\u05E8\\Flights\\backend\\backend\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\Flights\\backend\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|c:\\users\\user1\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D0\u05E0\u05D2\u05D5\u05DC\u05E8\\flights\\backend\\backend\\services\\flightapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|c:\\users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\flights\\backend\\backend\\services\\flightapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|solutionrelative:services\\flightapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|c:\\users\\user1\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D0\u05E0\u05D2\u05D5\u05DC\u05E8\\flights\\backend\\backend\\controllers\\flightscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|c:\\users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\flights\\backend\\backend\\controllers\\flightscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|solutionrelative:controllers\\flightscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|c:\\users\\user1\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D0\u05E0\u05D2\u05D5\u05DC\u05E8\\flights\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|c:\\users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\flights\\backend\\backend\\models\\flightcountbycompanydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|solutionrelative:models\\flightcountbycompanydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|c:\\users\\user1\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D0\u05E0\u05D2\u05D5\u05DC\u05E8\\flights\\backend\\backend\\models\\flightcompanystatsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|c:\\users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\flights\\backend\\backend\\models\\flightcompanystatsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|solutionrelative:models\\flightcompanystatsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|c:\\users\\user1\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D0\u05E0\u05D2\u05D5\u05DC\u05E8\\flights\\backend\\backend\\models\\flightdaystatdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|c:\\users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\flights\\backend\\backend\\models\\flightcountbycountrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|solutionrelative:models\\flightcountbycountrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|c:\\users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\flights\\backend\\backend\\models\\flighthourstatsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|solutionrelative:models\\flighthourstatsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|c:\\users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\flights\\backend\\backend\\models\\flightdaystatdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|solutionrelative:models\\flightdaystatdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|c:\\users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\flights\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFF584B2-07A5-4C46-B046-54F3A452FC77}|backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,19 +42,51 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "FlightCountByCompanyDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\Flights\\backend\\backend\\Models\\FlightCountByCompanyDto.cs",
+              "RelativeDocumentMoniker": "Models\\FlightCountByCompanyDto.cs",
+              "ToolTip": "C:\\Users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\Flights\\backend\\backend\\Models\\FlightCountByCompanyDto.cs",
+              "RelativeToolTip": "Models\\FlightCountByCompanyDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T19:47:31.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FlightHourStatsDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\Flights\\backend\\backend\\Models\\FlightHourStatsDto.cs",
+              "RelativeDocumentMoniker": "Models\\FlightHourStatsDto.cs",
+              "ToolTip": "C:\\Users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\Flights\\backend\\backend\\Models\\FlightHourStatsDto.cs",
+              "RelativeToolTip": "Models\\FlightHourStatsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T21:47:32.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FlightCountByCountryDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\Flights\\backend\\backend\\Models\\FlightCountByCountryDto.cs",
+              "RelativeDocumentMoniker": "Models\\FlightCountByCountryDto.cs",
+              "ToolTip": "C:\\Users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\Flights\\backend\\backend\\Models\\FlightCountByCountryDto.cs",
+              "RelativeToolTip": "Models\\FlightCountByCountryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T21:28:45.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D0\u05E0\u05D2\u05D5\u05DC\u05E8\\Flights\\backend\\backend\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\Flights\\backend\\backend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\user1\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D0\u05E0\u05D2\u05D5\u05DC\u05E8\\Flights\\backend\\backend\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\Flights\\backend\\backend\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -52,23 +96,23 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "FlightCompanyStatsDto.cs",
-              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D0\u05E0\u05D2\u05D5\u05DC\u05E8\\Flights\\backend\\backend\\Models\\FlightCompanyStatsDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\Flights\\backend\\backend\\Models\\FlightCompanyStatsDto.cs",
               "RelativeDocumentMoniker": "Models\\FlightCompanyStatsDto.cs",
-              "ToolTip": "C:\\Users\\user1\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D0\u05E0\u05D2\u05D5\u05DC\u05E8\\Flights\\backend\\backend\\Models\\FlightCompanyStatsDto.cs",
+              "ToolTip": "C:\\Users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\Flights\\backend\\backend\\Models\\FlightCompanyStatsDto.cs",
               "RelativeToolTip": "Models\\FlightCompanyStatsDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-12T22:02:54.567Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "FlightDayStatDto.cs",
-              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D0\u05E0\u05D2\u05D5\u05DC\u05E8\\Flights\\backend\\backend\\Models\\FlightDayStatDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\Flights\\backend\\backend\\Models\\FlightDayStatDto.cs",
               "RelativeDocumentMoniker": "Models\\FlightDayStatDto.cs",
-              "ToolTip": "C:\\Users\\user1\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D0\u05E0\u05D2\u05D5\u05DC\u05E8\\Flights\\backend\\backend\\Models\\FlightDayStatDto.cs",
+              "ToolTip": "C:\\Users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\Flights\\backend\\backend\\Models\\FlightDayStatDto.cs",
               "RelativeToolTip": "Models\\FlightDayStatDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-12T21:38:15.265Z"
             },
@@ -76,11 +120,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "FlightApiService.cs",
-              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D0\u05E0\u05D2\u05D5\u05DC\u05E8\\Flights\\backend\\backend\\Services\\FlightApiService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\Flights\\backend\\backend\\Services\\FlightApiService.cs",
               "RelativeDocumentMoniker": "Services\\FlightApiService.cs",
-              "ToolTip": "C:\\Users\\user1\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D0\u05E0\u05D2\u05D5\u05DC\u05E8\\Flights\\backend\\backend\\Services\\FlightApiService.cs",
+              "ToolTip": "C:\\Users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\Flights\\backend\\backend\\Services\\FlightApiService.cs",
               "RelativeToolTip": "Services\\FlightApiService.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAgwJ0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAALwAAAAAAAAAAAAkwMUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-12T21:16:12.077Z",
               "EditorCaption": ""
@@ -89,11 +133,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "FlightsController.cs",
-              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D0\u05E0\u05D2\u05D5\u05DC\u05E8\\Flights\\backend\\backend\\Controllers\\FlightsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\Flights\\backend\\backend\\Controllers\\FlightsController.cs",
               "RelativeDocumentMoniker": "Controllers\\FlightsController.cs",
-              "ToolTip": "C:\\Users\\user1\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D0\u05E0\u05D2\u05D5\u05DC\u05E8\\Flights\\backend\\backend\\Controllers\\FlightsController.cs",
+              "ToolTip": "C:\\Users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\angular\\project\\Flights\\backend\\backend\\Controllers\\FlightsController.cs",
               "RelativeToolTip": "Controllers\\FlightsController.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAgwFoAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAYwGgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-12T19:48:07.737Z"
             }
